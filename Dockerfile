@@ -4,10 +4,6 @@ FROM python:3.5
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ENV HTTP_PROXY="http://myproxy.redaelli.org:80"
-ENV HTTPS_PROXY="http://myproxy.redaelli.org:80"
-ENV http_proxy="http://myproxy.redaelli.org:80"
-ENV https_proxy="http://myproxy.redaelli.org:80"
 ENV PIP_OPTIONS="--proxy $HTTP_PROXY"
 
 COPY requirements.txt /usr/src/app/
